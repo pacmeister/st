@@ -6,7 +6,7 @@ stdenv.mkDerivation rec {
     src = fetchFromGitHub {
 	owner = "pacordova";
 	repo = "st";
-	rev = "a382e776c3e2ab613ad8d83d63d99b75334f9e10";
+	rev = "d05c239be64d86fe95507b6d521e1c5d28883cd6";
         sha256 = null;
     };
     nativeBuildInputs = [ pkgconfig ];
