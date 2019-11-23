@@ -2,12 +2,12 @@ with import <nixpkgs> {};
 
 stdenv.mkDerivation rec {
     name = "st";
-    version = "0.9";
+    version = "0.99";
     src = fetchFromGitHub {
 	owner = "pacordova";
 	repo = "st";
-	rev = "d05c239be64d86fe95507b6d521e1c5d28883cd6";
-        sha256 = null;
+	rev = "9e4d29c2c4ecb2cc8ac02673145e49ac54c97f5e";
+        sha256 = "0zdhgzwvw948pp2v3vx8dkr7jypyhlr8hyfr1apgi2gajbkjhp18";
     };
     nativeBuildInputs = [ pkgconfig ];
     buildInputs = [ xorg.libX11 ncurses xorg.libXext xorg.libXft fontconfig ];
